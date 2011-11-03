@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/lshort/japanese
+# catalog-date 2006-12-28 00:06:45 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-lshort-japanese
 Version:	20061228
 Release:	1
@@ -23,6 +29,7 @@ TeXLive lshort-japanese package.
 %doc %{_texmfdistdir}/doc/latex/lshort-japanese/READ.ME
 %doc %{_texmfdistdir}/doc/latex/lshort-japanese/jlshort-1.00.src.tar.gz
 %doc %{_texmfdistdir}/doc/latex/lshort-japanese/jlshort.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -33,3 +40,5 @@ TeXLive lshort-japanese package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
