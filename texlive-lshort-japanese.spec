@@ -5,8 +5,8 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-lshort-japanese
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	Japanese version of A Short Introduction to LaTeX2e 
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/japanese
