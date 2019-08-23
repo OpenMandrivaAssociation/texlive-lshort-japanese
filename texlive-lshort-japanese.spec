@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-lshort-japanese
-Version:	20190228
+Version:	20190822
 Release:	1
 Summary:	Japanese version of A Short Introduction to LaTeX2e 
 Group:		Publishing
@@ -38,16 +38,4 @@ TeXLive lshort-japanese package.
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
 
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20061228-2
-+ Revision: 753473
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20061228-1
-+ Revision: 718893
-- texlive-lshort-japanese
-- texlive-lshort-japanese
-- texlive-lshort-japanese
-- texlive-lshort-japanese
 
