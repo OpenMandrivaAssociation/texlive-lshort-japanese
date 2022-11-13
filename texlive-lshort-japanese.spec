@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/lshort/japanese
-# catalog-date 2006-12-28 00:06:45 +0100
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-lshort-japanese
-Version:	20190822
+Version:	36207
 Release:	1
 Summary:	Japanese version of A Short Introduction to LaTeX2e 
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/japanese
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-japanese.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-japanese.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-japanese.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-japanese.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,10 @@ TeXLive lshort-japanese package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
