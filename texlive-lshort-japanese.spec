@@ -1,6 +1,6 @@
 Name:		texlive-lshort-japanese
 Version:	36207
-Release:	1
+Release:	2
 Summary:	Japanese version of A Short Introduction to LaTeX2e 
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/japanese
